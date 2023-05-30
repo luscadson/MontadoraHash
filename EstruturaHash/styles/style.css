@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #011126;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-color: #011C40;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+.backbtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.backbtn img{
+    width: 40px;
+}
+
+input[type="text"] {
+    width: 70%;
+    height: 10%;
+    background-color: #074973;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    margin: 10px 0 10px;
+    padding-left: 10px;
+    outline: none;
+}
+input[type="text"]::placeholder {
+    color: #fff;
+}
+input[type="text"]:focus{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+  
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #074973;
+    color: #fff;
+    width: 70%;
+    height: 10%;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 0 5px ;
+}
+.button:hover {
+    background-color: #08678C;
+    transition: 0.5s;
+}
+#menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#menu h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative; /* Adicionado */
+}
+  
+.section h2 {
+    font-size: 30px;
+}
+  
+.section p {
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute; /* Adicionado */
+    bottom: 120px; /* Adicionado */
+}
+#adicionar p{
+    bottom: 90px;
+}

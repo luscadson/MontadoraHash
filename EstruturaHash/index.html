@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Montadora</title>
+</head>
+<body>
+    <div class="container">
+      <div id="menu">
+        <h1>Montadora de Carros</h1>
+        <button class="button" id="adicionarBtn">Adicionar</button>
+        <button class="button" id="encontrarBtn">Encontrar</button>
+        <button class="button" id="removerBtn">Remover</button>
+      </div>
+      <div id="adicionar" class="section" style="display: none;">
+        <button class="backbtn" id="adicionarVoltarBtn"><img src="images/icons8-duplo-para-a-esquerda-64.png" alt="seta de retorno"></button>
+        <h2>Adicionar Peça</h2>
+        <input type="text" id="idInput" placeholder="ID:">
+        <input type="text" id="localizacaoInput" placeholder="Prateleira:">
+        <button class="button" id="adicionarPecaBtn">Adicionar</button>
+        <p id="adicionarMensagem"></p>
+      </div>
+      <div id="encontrar" class="section" style="display: none;">
+        <h2>Encontrar Peça</h2>
+        <input type="text" id="idEncontrarInput" placeholder="ID:">
+        <button class="button" id="encontrarPecaBtn">Encontrar</button>
+        <button class="backbtn" id="encontrarVoltarBtn"><img src="images/icons8-duplo-para-a-esquerda-64.png" alt="seta de retorno"></button>
+        <p id="encontrarMensagem"></p>
+      </div>
+      <div id="remover" class="section" style="display: none;">
+        <button class="backbtn" id="removerVoltarBtn"><img src="images/icons8-duplo-para-a-esquerda-64.png" alt="seta de retorno"></button>
+        <h2>Remover Peça</h2>
+        <input type="text" id="idRemoverInput" placeholder="ID:">
+        <button class="button" id="removerPecaBtn">Remover</button>
+        <p id="removerMensagem"></p>
+      </div>
+    </div>
+    <!-- <script src="test.js"></script> -->
+    <script src="scripts/HashTable.js"></script>
+    <script src="scripts/userInterface.js"></script>
+</body>
+</html>
